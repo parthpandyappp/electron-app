@@ -1,0 +1,81 @@
+.container {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 35px;
+}
+
+.sectionTitle {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.sectionDescription {
+  font-size: 20px;
+}
+
+.innerContainer > button {
+  color: white;
+  width: 264px;
+  height: 64px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 14px;
+  border: none;
+  padding: 20px 25px;
+  background-color: black;
+}
+
+.heroImgContainer {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .innerContainer {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 40px;
+  }
+
+  .sectionDescription {
+    font-size: 16px;
+  }
+
+  .innerContainer > button {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  .heroImgContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heroImgContainer img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
