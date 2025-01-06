@@ -21,7 +21,24 @@
   font-size: 20px;
 }
 
-.innerContainer > button {
+.btnContainer {
+  display: flex;
+  gap: 12px;
+}
+
+.btnContainer > .secondaryBtn {
+  color: black;
+  width: 264px;
+  height: 64px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 14px;
+  border: 1px solid black;
+  padding: 20px 25px;
+  background-color: white;
+}
+
+.btnContainer > button {
   color: white;
   width: 264px;
   height: 64px;
@@ -30,6 +47,7 @@
   border-radius: 14px;
   border: none;
   padding: 20px 25px;
+  cursor: pointer;
   background-color: black;
 }
 
@@ -61,7 +79,14 @@
     font-size: 16px;
   }
 
-  .innerContainer > button {
+  .btnContainer > button {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  .btnContainer > .secondaryBtn {
     width: 100%;
     height: auto;
     font-size: 18px;

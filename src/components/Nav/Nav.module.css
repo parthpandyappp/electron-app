@@ -8,6 +8,7 @@
 .navTitle {
   height: 36px;
   width: 220px;
+  cursor: pointer;
 }
 
 .secondaryNavContainer {

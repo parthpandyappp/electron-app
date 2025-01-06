@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 80vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.processText {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.controlButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.controlButton:hover {
+  background-color: #0056b3;
+}
+
+video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.videoContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  border: 2px dashed #007bff;
+}
+
+.recordingBox,
+.previewBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  border: 2px dashed #007bff;
+}
+
+.controls {
+  text-align: center;
+}
+
+.controls button {
+  width: auto;
+  padding: 10px 20px;
+}
+
+.videoContainer h3 {
+  font-size: 20px;
+  color: #007bff;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,13 +1,16 @@
+// App.js
 import "./App.css";
-import { Brands, Hero, Nav } from "./components";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Nav } from "./components";
+import AppRoutes from "./Routes";
 
 function App() {
   return (
-    <div className="App">
+    <Router className="App">
       <Nav />
-      <Hero />
-      <Brands />
-    </div>
+      <AppRoutes />
+    </Router>
   );
 }
 
