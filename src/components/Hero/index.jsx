@@ -1,6 +1,9 @@
 import styles from "./Hero.module.css";
+import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className={styles.container}>
       <div className={styles.innerContainer}>
@@ -12,7 +15,15 @@ export const Hero = () => {
           through a range of services including SEO, PPC, social media
           marketing, and content creation.
         </div>
-        <button>Book a consultation</button>
+        <div className={styles.btnContainer}>
+          <button>Book a consultation</button>
+          <button
+            onClick={() => navigate("/record")}
+            className={styles.secondaryBtn}
+          >
+            Record
+          </button>
+        </div>
       </div>
       <div className={styles.heroImgContainer}>
         <img src="/hero-img.png" alt="hero-image" />

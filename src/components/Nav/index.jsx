@@ -1,10 +1,18 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./Nav.module.css";
 
 export const Nav = () => {
+  const navigate = useNavigate();
+
   return (
     <nav className={styles.navContainer}>
       <div>
-        <img src="/mainicon.png" alt="Main Icon" className={styles.navTitle} />
+        <img
+          src="/mainicon.png"
+          alt="Main Icon"
+          className={styles.navTitle}
+          onClick={() => navigate("/")}
+        />
       </div>
       <ul className={styles.secondaryNavContainer}>
         <li>About us</li>
